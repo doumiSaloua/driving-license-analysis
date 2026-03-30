@@ -137,6 +137,8 @@ def build_analytical_dataset(lf: pl.LazyFrame) -> pl.LazyFrame:
             "last_valid",
             "first_timestamp",
             "last_timestamp",
+            "first_timestamp_dt",  
+            "last_timestamp_dt", 
             "time_to_last_attempt",
             "is_empty_history",
             "has_multiple_attempts",
@@ -148,5 +150,6 @@ def build_analytical_dataset(lf: pl.LazyFrame) -> pl.LazyFrame:
             "needed_multiple_attempts_to_succeed",
             "never_correct",
             "avg_time_between_attempts",
+            "history_ordered",
         ]
     )
